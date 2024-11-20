@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+    padding: 10px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.postarea {
+    width: 500px;
+    height: 380px;
+    background-color: rgba(255, 255, 255, 0.979);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.underline {
+    padding: 2px;
+    width: 100px;
+    border-bottom: 2px lightgreen solid;
+}
+
+.img img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.post {
+    color: rgb(74, 30, 116);
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn {
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reveiw {
+    margin: 10px;
+    text-align: center;
+}
+
+#name {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .postarea {
+        width: 90%; 
+        height: auto; 
+        padding: 20px;
+    }
+
+    .img img {
+        height: 100px;
+        width: 100px; 
+    }
+
+    .btn {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 20px;
+    }
+
+    .postarea {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .img img {
+        height: 80px;
+        width: 80px; 
+    }
+
+    .underline {
+        width: 80px;
+    }
+
+    .post {
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 5px;
+    }
+
+    .btn {
+        border-width: 1px;
+        padding: 5px;
+    }
+}
